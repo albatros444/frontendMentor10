@@ -6,10 +6,16 @@ html {
     box-sizing: inherit;
     }
     body {
+    display: flex;
+    justify-content: center;
     margin: 0;
     padding: 0;
-    
-    //  position: relative; ///for footer with absolute position -->
+    font-size: 15px;
+    font-family: 'League Spartan', sans-serif;
+    h1, p {
+        margin-top: 0;
+    }
+     position: relative; ///for footer with absolute position -->
     
     }
     textarea,

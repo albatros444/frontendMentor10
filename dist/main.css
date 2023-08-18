@@ -8,8 +8,16 @@ html {
 }
 
 body {
+  display: flex;
+  justify-content: center;
   margin: 0;
   padding: 0;
+  font-size: 15px;
+  font-family: "League Spartan", sans-serif;
+  position: relative;
+}
+body h1, body p {
+  margin-top: 0;
 }
 
 textarea,
@@ -28,6 +36,199 @@ input {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+.verifiedBuyers {
+  display: flex;
+  justify-content: space-between;
+}
+.verifiedBuyers__card {
+  max-width: 352px;
+  height: 234px;
+  background-color: hsl(300, 43%, 22%);
+  border-radius: 10px;
+  padding: 30px;
+  color: hsl(300, 24%, 96%);
+}
+.verifiedBuyers__card__avatarContainer {
+  display: flex;
+  padding-top: 7px;
+}
+.verifiedBuyers__card__avatarContainer img {
+  margin-top: 4px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.verifiedBuyers__card__avatarContainer div {
+  margin-left: 23px;
+  margin-top: 4px;
+}
+.verifiedBuyers__card__avatarContainer div .name {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+.verifiedBuyers__card__avatarContainer div .verified {
+  font-size: 16px;
+  color: hsl(333, 40%, 57%);
+  margin-bottom: 20px;
+}
+.verifiedBuyers__card p {
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: 0.02rem;
+}
+.verifiedBuyers .second {
+  margin-top: 15px;
+  margin-left: 30px;
+}
+.verifiedBuyers .third {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.bgImage {
+  height: 100vh;
+  max-width: 1475px;
+  background-image: url("/images/bg-pattern-top-desktop.svg"), url("/images/bg-pattern-bottom-desktop.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: left top, right bottom;
+  padding-top: 117px;
+  padding-left: 165px;
+  padding-right: 165px;
+}
+
+.hero {
+  display: flex;
+  margin-bottom: 52px;
+}
+.hero__left {
+  flex: 0 0 420px;
+}
+.hero__left h1 {
+  font-size: 56px;
+  line-height: 48px;
+  letter-spacing: -2px;
+  color: hsl(300, 43%, 22%);
+  margin-bottom: 26px;
+}
+.hero__left p {
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: -0.04rem;
+  color: hsl(303, 10%, 53%);
+}
+.hero__right {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  margin-top: 27px;
+}
+.hero__right__container__ratingContainer {
+  display: flex;
+  height: 56px;
+  width: 444px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  align-items: center;
+  background-color: hsl(300, 24%, 96%);
+}
+.hero__right__container__ratingContainer .stars {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.hero__right__container__ratingContainer .stars img {
+  padding-right: 5px;
+}
+.hero__right__container__ratingContainer p {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 700;
+  color: hsl(300, 43%, 22%);
+}
+.hero__right__container .second {
+  margin-left: 47px;
+}
+.hero__right__container .third {
+  margin-left: 95px;
+}
+
+@media screen and (max-width: 1295px) {
+  .bgImage {
+    height: auto;
+    background-image: url("/images/bg-pattern-top-mobile.svg"), url("/images/bg-pattern-bottom-mobile.svg");
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 82px;
+    padding-bottom: 74px;
+  }
+  .hero {
+    display: block;
+    margin-bottom: 34px;
+  }
+  .hero__left {
+    text-align: center;
+  }
+  .hero__left h1 {
+    font-size: 41px;
+    line-height: 32px;
+    margin-bottom: 22px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .hero__left p {
+    margin-bottom: 37px;
+  }
+  .hero__right {
+    display: block;
+  }
+  .hero__right__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero__right__container__ratingContainer {
+    display: block;
+    width: max(327px, 60%);
+    height: 78px;
+  }
+  .hero__right__container__ratingContainer .stars {
+    width: 185px;
+    margin: auto;
+    padding-top: 15px;
+    padding-bottom: 12px;
+  }
+  .hero__right__container__ratingContainer p {
+    text-align: center;
+  }
+  .hero__right__container .second {
+    margin-left: 0px;
+  }
+  .hero__right__container .third {
+    margin-left: 0px;
+  }
+  .verifiedBuyers {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .verifiedBuyers__card {
+    min-width: 327px;
+    height: auto;
+  }
+  .verifiedBuyers__card p {
+    margin-bottom: 0px;
+  }
+  .verifiedBuyers .second {
+    margin-left: 0px;
+  }
+  .verifiedBuyers .third {
+    margin-top: 15px;
+    margin-left: 0px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

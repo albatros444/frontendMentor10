@@ -1,0 +1,80 @@
+@media screen and (max-width: 1295px ) {
+    .bgImage {
+        height: auto;
+        background-image:  url("/images/bg-pattern-top-mobile.svg"),url("/images/bg-pattern-bottom-mobile.svg");
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-top: 82px;
+        padding-bottom: 74px;
+        
+    }
+    .hero {
+        display: block;
+        margin-bottom: 34px;
+        &__left{
+            text-align: center;
+            h1{
+                font-size: 41px;
+                line-height: 32px;
+                margin-bottom: 22px;
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+            p{
+                margin-bottom: 37px;
+            }
+        }
+        &__right{
+            display: block;
+            &__container {
+                display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+                &__ratingContainer{
+                    display: block;
+                    width: max(327px, 60%);
+                    height: 78px;
+                    .stars{
+                        width: 185px;
+                        margin: auto;
+                        padding-top: 15px;
+                        padding-bottom: 12px;
+                        
+                    }
+                    p{
+                        text-align: center;
+                    }
+                }
+                .second {
+                    margin-left:0px ;
+                }
+                .third {
+                    margin-left: 0px;
+                }
+            }
+        }
+    }
+    .verifiedBuyers {
+        flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        
+        &__card{
+            // max-width: 400px;
+            min-width: 327px;
+            height: auto;
+            p{
+                margin-bottom: 0px;
+            }
+        }
+        .second{
+            margin-left: 0px;
+        }
+        .third{
+            margin-top: 15px;
+            margin-left: 0px;
+
+        }
+    }
+}

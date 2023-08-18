@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"name": "social-proof-section-master",
+			"path": ".."
+		},
+		{
+			"name": "foam",
+			"path": "../../../foam"
+		},
+		{
+			"path": "../../../gptWordsHelper2"
+		}
+	],
+	"settings": {
+		"files.defaultLanguage": "markdown",
+		"foam.edit.linkReferenceDefinitions": "off",
+		"foam.openDailyNote.directory": "journal",
+		"foam.openDailyNote.titleFormat": "fullDate",
+		"liveServer.settings.multiRootWorkspaceName": "social-proof-section-master"
+	}
+}
